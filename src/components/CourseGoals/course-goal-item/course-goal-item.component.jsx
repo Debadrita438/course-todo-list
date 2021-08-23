@@ -1,4 +1,4 @@
-import './course-goal-item.styles.css';
+import { GoalItemStyles } from './course-goal-item.styles';
 
 const CourseGoalItem = ({ text, id, onDelete }) => {
     const deleteHandler = () => {
@@ -6,9 +6,9 @@ const CourseGoalItem = ({ text, id, onDelete }) => {
     }
 
     return ( 
-        <li className='goal-item' onClick={deleteHandler}>
+        <GoalItemStyles onClick={deleteHandler}>
             { text }
-        </li>
+        </GoalItemStyles>
     );
 }
  

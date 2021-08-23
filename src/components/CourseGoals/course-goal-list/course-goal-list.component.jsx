@@ -1,8 +1,9 @@
 import CourseGoalItem from '../course-goal-item/course-goal-item.component';
+import { GoalList } from './course-goal-list.styles';
 
 const CourseGoalList = ({ courseGoals, onDeleteGoal }) => {
     return ( 
-        <ul>
+        <GoalList>
             {
                 courseGoals.map(goal => 
                     <CourseGoalItem
@@ -13,7 +14,7 @@ const CourseGoalList = ({ courseGoals, onDeleteGoal }) => {
                     />
                 )
             }
-        </ul>
+        </GoalList>
     );
 }
  
