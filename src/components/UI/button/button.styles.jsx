@@ -1,11 +1,3 @@
-// import './button.styles.css';
-
-// const Button = ({ children }) => {
-//     return ( 
-//         <button className='button'>{children}</button>
-//     );
-// }
-
 import styled from 'styled-components';
 
 const Button = styled.button`
