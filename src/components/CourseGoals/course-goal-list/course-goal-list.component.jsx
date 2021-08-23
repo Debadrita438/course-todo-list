@@ -1,9 +1,9 @@
 import CourseGoalItem from '../course-goal-item/course-goal-item.component';
-import { GoalList } from './course-goal-list.styles';
+import styles from './course-goal-list.module.css';
 
 const CourseGoalList = ({ courseGoals, onDeleteGoal }) => {
     return ( 
-        <GoalList>
+        <li className={styles['goal-list']}>
             {
                 courseGoals.map(goal => 
                     <CourseGoalItem
@@ -14,7 +14,7 @@ const CourseGoalList = ({ courseGoals, onDeleteGoal }) => {
                     />
                 )
             }
-        </GoalList>
+        </li>
     );
 }
  
